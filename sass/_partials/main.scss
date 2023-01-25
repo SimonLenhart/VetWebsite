@@ -1,0 +1,223 @@
+.elementor {
+  > section:first-of-type {
+    position: relative;
+    left: -50px;
+    width: 100vw;
+    max-width: 100vw;
+    height: 100%;
+    > .elementor-container {
+      max-width: 100vw !important;
+      .elementor-widget-wrap {
+        padding: 0px !important;
+      }
+    }
+  }
+}
+section {
+  margin: 0 auto;
+}
+
+// Homepage
+.elementor-element-5ac9812 {
+  margin-top: 30px;
+  .elementor-element-c12c2dc {
+    margin-left: 100px;
+    .elementor-widget-text-editor:not(:last-child) {
+      margin-bottom: 50px !important;
+    }
+    h5 {
+      margin-bottom: 10px !important;
+    }
+  }
+  .elementor-element-bc29f5b {
+    display: none;
+  }
+}
+
+// Sprechzeiten
+.elementor-element-7aa1337 {
+  margin-bottom: 0 !important;
+}
+.elementor-element-d093710 > div {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+.sprechzeitenBox {
+  width: fit-content !important;
+  border: 3px solid $color_red;
+  padding: 20px;
+  p {
+    margin-bottom: 0 !important;
+  }
+}
+
+//Leistungen
+.elementor-element-56d077a {
+  padding: 15px;
+  h5 {
+    margin-bottom: 20px !important;
+  }
+}
+
+//Praxisräume
+.elementor-22 {
+  .elementor-col-33 {
+    margin: 10px;
+    > .elementor-widget-wrap {
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  }
+}
+
+// Anfahrt
+.elementor-element-80819d7 {
+  .elementor-col-66 {
+    margin-bottom: 30px;
+  }
+  .elementor-element-c0adbfa {
+    margin-left: 100px;
+    > .elementor-widget-wrap {
+      gap: 30px;
+    }
+    h5 {
+      margin-bottom: 10px !important;
+    }
+  }
+}
+
+// Lebenslauf Dr. Münker
+.elementor-element-dee4ea7 {
+  h5 {
+    margin-bottom: 15px !important;
+  }
+  table {
+    td:first-of-type {
+      width: 150px;
+    }
+  }
+}
+
+table {
+  &.tableWithSpace {
+    border-collapse: separate;
+    border-spacing: 0px 5px;
+    td {
+      padding-right: 50px;
+      vertical-align: top;
+    }
+    td:first-of-type {
+      min-width: 170px;
+    }
+  }
+}
+@media screen and (max-width: $bp-mobile) {
+  table {
+    &.tableWithSpace {
+      td {
+        padding-right: 10px;
+        vertical-align: top;
+      }
+      td:first-of-type {
+        min-width: 125px;
+      }
+    }
+  }
+}
+// Praxisräumne
+.elementor-22 {
+  .elementor-widget-image {
+    a {
+      overflow: hidden;
+    }
+  }
+  img {
+    cursor: pointer;
+    transition: 0.5s all;
+    max-height: 203px;
+    object-fit: contain;
+  }
+  img:hover {
+    transform: scale(1.1);
+  }
+  .textCol {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  //Home
+  .elementor-element-5ac9812 {
+    > .elementor-container {
+      flex-direction: column;
+      gap: 20px!;
+      .elementor-col-66 {
+        width: 100%;
+        .elementor-element-bc29f5b {
+          display: block !important;
+        }
+      }
+      .elementor-col-33 {
+        width: 100%;
+        margin-left: 0 !important;
+        > .elementor-widget-wrap {
+          width: 100%;
+          justify-content: space-between;
+          flex-direction: row;
+          gap: 10px;
+          > .elementor-widget {
+            width: 30%;
+          }
+          > .elementor-widget:first-of-type {
+            flex-grow: 2;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $bp-tablet) {
+  //Praxisräume
+  .textCol {
+    width: 100% !important;
+  }
+  //Anfahrt
+  .elementor-element-c0adbfa {
+    margin-left: 0 !important;
+  }
+}
+
+@media screen and (max-width: $bp-medium) {
+  //Home
+  .elementor-element-5ac9812 {
+    .elementor-col-33 {
+      > .elementor-widget-wrap {
+        flex-direction: column !important;
+        > .elementor-widget {
+          width: 100% !important;
+          margin-bottom: 20px !important;
+        }
+      }
+    }
+  }
+  // Praxisräumne
+  .elementor-22 {
+    img {
+      max-height: none !important;
+    }
+  }
+}
+
+@media screen and (max-width: $bp-smallest) {
+  //Home
+  .elementor-element-4853023 {
+    h2 {
+      font-size: 25px !important;
+      line-height: 30px !important;
+    }
+  }
+}

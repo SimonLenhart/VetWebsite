@@ -1,0 +1,46 @@
+.site-footer {
+  background-color: $color_red;
+  padding: 20px;
+  .wp-block-table {
+    display: flex;
+    justify-content: center;
+    table {
+      width: 70vw !important;
+      border-collapse: collapse;
+      border-style: hidden;
+      tr:nth-child(1) {
+        font-weight: 800;
+        height: 60px;
+        font-size: 18px;
+      }
+      td {
+        color: $color_white !important;
+        border-style: hidden;
+        width: 33.333%;
+        > a {
+          color: $color_white !important;
+          font-size: 14px !important;
+          text-decoration: none;
+        }
+      }
+      td:nth-child(2) {
+        min-width: 135px;
+      }
+      td:nth-child(3) {
+        min-width: 114px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $bp-mobile) {
+  #colophon {
+    padding: 20px 10px !important;
+    table {
+      width: 100% !important;
+      a {
+        text-decoration: none !important;
+      }
+    }
+  }
+}
