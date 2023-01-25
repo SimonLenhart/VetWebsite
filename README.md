@@ -21,5 +21,6 @@ https://tierarztpraxis-remshalden.de/
 For further questions, please write an email to simon.lenhart@gmx.de or text me on [LinkedIn](https://www.linkedin.com/in/simon-lenhart/). 
 
 ## Example Pictures 
-![screenshotAnfahrt](https://user-images.githubusercontent.com/66257427/214604903-6dc0638c-5fd9-44f0-9fac-aa48a809e195.PNG)
 ![screenshotSprechzeiten](https://user-images.githubusercontent.com/66257427/214604907-0d26d4ec-88ea-4f26-bdac-d4b62a08aa3d.PNG)
+![screenshotAnfahrt](https://user-images.githubusercontent.com/66257427/214604903-6dc0638c-5fd9-44f0-9fac-aa48a809e195.PNG)
+
