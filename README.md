@@ -2,10 +2,10 @@
 Theme code of the Wordpress/Elementor website for a veterinary clinic
 
 ## Development
-This website was created for a veterinarian clinic in Remshalden, Germany.<br>
+This web application was created for a veterinarian clinic in Remshalden, Germany.<br>
 They wanted a simple but clearly structured website so that their customers could get all the important information about the clinic.<br>
 
-The website was created with WordPress in combination with Elementor. For the construction of the website, partly custom widgets were programmed in PHP, partly already existing widgets were used. <br>
+For the creation of the website WordPress in combination with Elementor was used. Partly, customly programmed widgets in PHP were used, partly it was taken use of already existing widgets. <br>
 
 This website was entirely designed and developed by me. <br>
 
