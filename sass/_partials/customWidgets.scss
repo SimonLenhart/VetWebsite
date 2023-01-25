@@ -1,0 +1,184 @@
+.elementor-widget-header_picture {
+  text-align: center;
+  .headerPicture {
+    height: 350px;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .pageTitle {
+      align-items: center;
+      width: 500px;
+      position: relative;
+      left: 20%;
+      h4 {
+        color: $color_white !important;
+      }
+    }
+  }
+  h2 {
+    margin-top: 30px;
+    color: $color_red !important;
+    margin-bottom: 15px;
+    padding: 0px 10px;
+  }
+}
+
+.homeHeader {
+  .headerPicture {
+    height: 400px !important;
+    background-position: 50% 20%;
+  }
+}
+.sprechzeitenHeader {
+  .headerPicture {
+    background-position: 50% 39%;
+  }
+}
+.leistungenHeader {
+  .headerPicture {
+    background-position: 50% 55%;
+  }
+}
+.räumeHeader {
+  .headerPicture {
+    background-position: 50% 40%;
+  }
+}
+.linksHeader {
+  .headerPicture {
+    background-position: 50% 60%;
+  }
+}
+
+.teamMemberWrapper {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 40px;
+  padding: 40px;
+  .memberItem {
+    width: 45%;
+    min-width: 300px;
+    max-width: 430px;
+    border: 1px solid $color_lightgrey;
+    transition: all 0.5s;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .memberImage {
+      width: 70%;
+      display: flex;
+      justify-content: center;
+      height: 200px;
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+      }
+    }
+    .memberContent {
+      padding-top: 25px;
+      width: 100%;
+      .showOnHover {
+        height: 0;
+        opacity: 0;
+        font-size: 14px !important;
+        background: #f1cbcb87;
+        padding: 10px;
+        * {
+          height: 100%;
+        }
+        table {
+          td {
+            text-align: left;
+          }
+          td:nth-child(1) {
+            width: 130px;
+            vertical-align: top;
+          }
+        }
+        &.clicked {
+          display: block;
+        }
+        &.active {
+          height: auto;
+          opacity: 1;
+        }
+      }
+    }
+  }
+  .memberItem:hover {
+    transform: scale(1.1);
+    .showOnHover {
+      height: auto;
+      opacity: 1;
+    }
+  }
+  .memberItem:first-of-type {
+    cursor: pointer;
+  }
+}
+
+.leistungenWrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 40px;
+  padding-top: 20px;
+  .leistungsItem {
+    /*     width: 30%; */
+    min-width: 250px;
+    border: 1px solid $color_lightgrey;
+    transition: all 0.5s;
+    padding: 10px 0px;
+    .leistungsTitle {
+      margin: 10px 0px;
+      text-align: center;
+    }
+    .leistungsImage {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      height: 200px;
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+    .leistungsContent {
+      text-align: left;
+      padding: 20px;
+      ul {
+        margin: 0 !important;
+        padding-left: 20px;
+      }
+    }
+  }
+  /*   .leistungsItem:hover {
+    transform: scale(1.1);
+  } */
+  &:after {
+    content: "";
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: $bp-mobile) {
+  .leistungenWrapper {
+    .leistungsItem {
+      width: 100% !important;
+    }
+  }
+  .headerPicture {
+    max-height: 37vh;
+  }
+}

@@ -1,0 +1,105 @@
+body {
+  margin: 0 !important;
+  font-family: $base-font-family !important;
+  font-size: $base-font-size !important;
+  font-weight: $base-font-weight !important;
+  line-height: $base-line-height;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.elementor-top-section:not(:first-of-type) {
+  max-width: 1327px;
+  &.elementor-section-boxed > .elementor-container {
+    max-width: 1327px;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+a {
+  font-family: $base-font-family !important;
+  color: $color_black !important;
+  letter-spacing: 4% !important;
+  margin-top: 0;
+}
+h1,
+h2 {
+  font-size: 36px !important;
+  font-weight: 900 !important;
+  text-transform: uppercase;
+  line-height: 50px !important;
+}
+h3 {
+  font-size: 26px !important;
+  font-weight: 900 !important;
+  line-height: 33px !important;
+  margin-bottom: 0px !important;
+}
+h4 {
+  font-size: 18px !important;
+  font-weight: 900 !important;
+  color: $color_red !important;
+}
+h5 {
+  font-size: 20px !important;
+  font-weight: $base-font-weight-bold !important;
+  margin-bottom: 0 !important;
+  color: $color_red !important;
+}
+h6 {
+  font-size: $base-font-size !important;
+  font-weight: $base-font-weight-bold !important;
+  margin-bottom: 0 !important;
+  color: $color_red !important;
+}
+p {
+  font-size: $base-font-size !important;
+  font-weight: 400 !important;
+}
+
+a {
+  color: $color_red !important;
+  /*  text-decoration: underline !important; */
+}
+
+.site-main {
+  margin-top: 100px;
+  padding: 50px;
+  padding-top: 0 !important;
+}
+
+@media screen and (max-width: $bp-large) {
+  .site-main {
+    padding: 25px;
+    .elementor {
+      > section:first-of-type {
+        left: -25px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $bp-smallest) {
+  .site-main {
+    padding: 0px 10px 10px 10px !important;
+    .elementor {
+      > section:first-of-type {
+        left: -10px !important;
+      }
+    }
+  }
+}
